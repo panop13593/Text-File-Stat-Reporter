@@ -104,7 +104,7 @@ int main()
     }
     array[i] = '\0';
 
-     /* Increment words and lines for last word */
+     // Increment words and lines for last word //
     if (characters > 0)
     {
         words++;
@@ -120,12 +120,12 @@ int main()
     }
     for (j = 0; j < i; j++)
     {
-    // Use the beginning of each word ...
+    // Use the beginning of each word//
     if (isalpha(array[j]))
      {
       Count_frequency(&array[j], array, i, occur, allw, &szo, &szw);
       
-      // skip test of word
+      // skip test of word//
       do {
         j++;
       } while (isalpha(array[j]));
